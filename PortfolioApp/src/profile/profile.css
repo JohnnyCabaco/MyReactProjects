@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'MGS2';
+    src: url('../assets/fonts/MGS2.ttf');
+}
+
+.profile-container {
+    width: 90%;
+    height: 90vh;
+    max-width: 1080px;
+    margin: 5vh auto;
+    box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+    background-color: black;
+    padding: 25px;
+    border-radius: 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.profile-div {
+    display: block;
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.profile-image {
+    width: 100%;
+    max-height: 100%;
+    max-width: 420px;
+    border-radius: 25px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.profile-text {
+    padding: 25px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.profile-message {
+    font-family: 'MGS2';
+    margin: 0 0 16px;
+    font-size: 2em;
+}
+
+.profile-title {
+    font-family: 'MGS2';
+    text-transform: uppercase;
+    color: rgb(238, 218, 60);
+    font-size: 6em;
+    line-height: 1em;
+    margin: 8px 0 36px;
+    text-shadow: 2px 2px 2px #e02526;
+    letter-spacing: 1px;
+}
+
+.profile-description {
+    line-height: 24px;
+    font-size: 1.25em;
+    text-align: center;
+    margin: 0 0 36px;
+    max-height: 90%;
+}
+
+.profile-list {
+    list-style-type: none;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-list li {
+    margin: 0 25px;
+}
+
+.profile-link {
+    font-size: 2em;
+    color: #fff;
+    height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .profile-container {
+        width: 96vw;
+        height: auto;
+        display: block;
+        margin: 2vh 2vw;
+    }
+
+    .profile-div {
+        float: none;
+        width: 100%;
+    }
+
+    .profile-image {
+        display: block;
+    }
+
+    .helper {
+        display: none;
+    }
+}
